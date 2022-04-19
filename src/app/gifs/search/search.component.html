@@ -1,0 +1,20 @@
+<h5>Buscar:</h5>
+<!-- We use ngModel -->
+<!-- <input  name="stringQuery"
+        type="text"
+        class="form-control" 
+        placeholder="Buscar gifs ...." 
+        [(ngModel)]="stringQuery"
+        (keyup.enter)="buscar(stringQuery)"> -->
+<!-- We use a template variable -->
+<input  name="stringQuery"
+        type="text"
+        class="form-control" 
+        placeholder="Buscar gifs ...."
+        (keyup.enter)="buscar()"
+        #searchTxt >
+<button type="button" 
+        class="btn btn-outline-primary mt-2 float-end"
+        (click)="buscar()">
+        Buscar
+</button>
